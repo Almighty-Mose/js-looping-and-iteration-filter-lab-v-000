@@ -12,8 +12,14 @@ function fuzzyMatch(drivers, query) {
   });
 }
 
-// function matchName(drivers, query) {
-//   return drivers.filter(function (driver) {
+function matchName(drivers, query) {
+  return drivers.filter(function (driver) {
+    return driver.name.toLowerCase() === name.toLowerCase();
+  });
+}
+
+// function matchName (list, name) {
+//   return list.filter(function (driver) {
 //     return driver.name.toLowerCase() === name.toLowerCase();
 //   });
 // }
