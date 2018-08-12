@@ -11,3 +11,9 @@ function fuzzyMatch(drivers, query) {
     return name.slice(0, queryLength) === query;
   });
 }
+
+function matchName(drivers, query) {
+  return drivers.filter(function (name) {
+    
+  });
+}
