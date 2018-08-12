@@ -7,7 +7,7 @@ function findMatching(drivers, query) {
 
 function fuzzyMatch(drivers, query) {
   let queryLength = query.length;
-  return driver.filter(function (name) {
+  return drivers.filter(function (name) {
     return name.slice(0, queryLength) === query;
   });
 }
